@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Login from './components/LogIn&Signup/Login'
+import Signup from './components/LogIn&Signup/Signup'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from './components/Main/Main';
+import AutherQ from './components/Main/AutherQ';
+import KeywordQ from './components/Main/KeywordQ';
+import Aboutus from './components/Aboutus';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Login/>}/>
+      <Route path='/signup' element={<Signup/>}/>
+      <Route path='/main/:name' element={<Main/>}/>
+      <Route path='/quotes/:author' element={<AutherQ/>}/>
+      <Route path='/keyword/:keywords' element={<KeywordQ/>}/>
+      <Route path='/aboutus' element={<Aboutus/>}/>
+      
+    </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,57 @@
+.main-container {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .quote-section {
+    margin-bottom: 10%;
+  
+  }
+  
+  .authors-section {
+    margin-bottom: -60%;
+    margin-top: 10%;
+  }
+  
+  .keywords-section {
+    margin-top: 60%; 
+    margin-bottom: 100px;
+  }
+  .btn button{
+    background-color: hsl(210, 29%, 24%);
+    margin-left: 86%;
+    margin-top: 2%;
+    color: white;
+    width: 13vh;
+    height: 6vh;
+    font-size: 2vh;
+    
+  }
+  .btn button:hover{
+    background-color: #28658e;
+  }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .main-container {
+      padding: 15px; 
+    }
+  
+    .quote-section,
+    .authors-section,
+    .keywords-section {
+      margin-bottom: 30px; 
+    }
+    .authors-section{
+      margin-bottom: -200px;
+    }
+  
+    .keywords-section {
+      margin-top: -10vh; 
+      margin-bottom: 5vh;
+    }
+    .btn button{
+      margin-left: 60vh;
+    }
+  }
+  

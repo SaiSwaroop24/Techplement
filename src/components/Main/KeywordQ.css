@@ -1,0 +1,80 @@
+.quotes-container {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .quotes {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  
+  .quote {
+    background-color: rgb(143, 155, 185);
+    padding: 45px;
+    border-radius: 5px;
+    font-size: 24px;
+    height: auto; /* Adjusted to auto for better responsiveness */
+    width: 960px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote p {
+    margin: 0;
+  }
+  
+  .quotes-container h1 {
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .quote {
+      width: 80%;
+      padding: 35px;
+    }
+  
+    .quotes-container h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .quote {
+      width: 90%;
+      padding: 25px;
+      font-size: 20px;
+    }
+  
+    .quotes {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  
+    .quotes-container h1 {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quote {
+      width: 95%;
+      padding: 15px;
+      font-size: 18px;
+    }
+  
+    .quotes {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .quotes-container h1 {
+      font-size: 28px;
+    }
+  }
+  

@@ -1,0 +1,79 @@
+.container {
+    padding: 50px;
+    text-align: center;
+    height: 10px;
+  }
+  
+  .authors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .namea {
+    background-color: rgb(143, 155, 185);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    color: black;
+    font-size: 18px;
+    font-weight: 20px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: rgb(182, 189, 207);
+  }
+  
+  .search{
+    display: flex;
+    justify-content:baseline;
+    align-items:  baseline;
+    margin-top: -30px;
+    margin-left: 1000px;
+  }
+  .search input{
+    margin-right: 20px;
+  }
+  .search button{
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #2c3e50;
+
+  }
+  
+  @media (max-width: 768px) {
+    .search {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: -40vh;
+    }
+  
+    .search input {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .search button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search {
+      
+      
+    }
+  
+    .search input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search button {
+      width: 100%;
+    }
+  }
+  
